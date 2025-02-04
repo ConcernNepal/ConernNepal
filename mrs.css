@@ -1,0 +1,569 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/* General Header Styling */
+header {
+    position: relative;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 10px;
+    background: #FFF;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    z-index: 1000;
+}
+
+.logo img {
+    height: 60px;
+    float: left;
+}
+
+nav {
+    float: right;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out; 
+}
+
+.clear {
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    position: relative; /* For dropdown positioning */
+}
+
+nav ul li a {
+    display: block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #D71340;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: #D71340;
+    background: 0 0;
+    border-radius: 8px;
+    border: 2px solid #013892;
+    transition: 0.5s;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    /* background: #FFF; */
+    padding: 10px 0;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown{
+background-color: none  ;
+}
+.dropdown-menu li a {
+    padding: 10px 20px;
+    display: block;
+    color: #D71340;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background: #013892;
+    color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block; /* Show dropdown on hover */
+}
+
+/* Responsive Navigation */
+.mean-toggle {
+    display: none;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+    font-size: 30px;
+    color: #D71340;
+    z-index: 1100;
+}
+
+.mean-toggle:before {
+    content: '\f0c9'; /* FontAwesome hamburger icon */
+    font-family: FontAwesome;
+    line-height: 40px;
+}
+
+.mean-toggle.active:before {
+    content: '\f00d'; /* FontAwesome close icon */
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .mean-toggle {
+        display: block;
+        width: auto;
+        height: auto;
+        margin: 10px;
+        float: right;
+        cursor: pointer;
+        text-align: center;
+        font-size: 30px;
+        color: #D71340;
+    }
+
+    .mean-toggle:before {
+        content: '\f0c9';
+        font-family: fontAwesome;
+        line-height: 40px;
+    }
+
+    .mean-toggle.active:before {
+        content: '\f00d';
+    }
+
+    nav {
+        display: none;
+       
+    }
+
+    nav.active {
+        display: block;
+        width: 100%;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: left;
+        width: 100%;
+    }
+
+    nav ul li a {
+        padding: 15px 20px;
+        width: 100%;
+    }
+
+    .dropdown-menu {
+        position: static; /* Stack dropdown vertically in mobile view */
+        box-shadow: none;
+    }
+}
+
+
+/* 
+nagivation bar ends */
+
+
+
+
+
+
+/* Market Research Section */
+.market-research {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+.market-research-container {
+    display: flex;
+    max-width: 1349px;
+    height: 524px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Left Text Section */
+.market-research-text {
+    width: 770px;
+    text-align: left;
+}
+
+.market-research-title {
+    font-family: 'FONTSPRING DEMO - Integral CF Bold', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 77px;
+    color: #000;
+}
+
+.market-research-title .highlight {
+    color: #000;
+}
+
+.market-research-description {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #000;
+    margin-top: 20px;
+    width: 701px;
+}
+
+/* Right Image Section */
+.market-research-image {
+    width: 595px;
+    height: 524px;
+    background: url('market.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .market-research-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        height: auto;
+    }
+
+    .market-research-text {
+        width: 100%;
+        max-width: 800px;
+        text-align: center;
+    }
+
+    .market-research-title {
+        font-size: 50px;
+        line-height: 65px;
+    }
+
+    .market-research-description {
+        font-size: 20px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .market-research-image {
+        width: 90%;
+        max-width: 600px;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .market-research-title {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .market-research-description {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    .market-research-title {
+        font-size: 32px;
+        line-height: 42px;
+    }
+
+    .market-research-description {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.what-we-offer {
+    text-align: center;
+    margin: 50px auto;
+    max-width: 1100px;
+    position: relative;
+}
+
+.what-we-offer h2 {
+    font-family: 'Integral CF Bold', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.what-we-offer .underline {
+    width: 345px;
+    height: 5px;
+    background: linear-gradient(90deg, #DC143C 0%, #003892 100%);
+    margin: 0 auto 40px;
+}
+
+.offer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.offer-card {
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+}
+
+.offer-card:hover {
+    transform: translateY(-5px);
+}
+
+.offer-card .icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(180deg, #DB153C 0%, #013892 100%);
+    border-radius: 16px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.offer-card h3 {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-top: 80px;
+}
+
+.offer-card p {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .what-we-offer h2 {
+        font-size: 48px;
+    }
+
+    .offer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 90%;
+    }
+}
+
+/* What We Offer Hover Effect */
+.service-box {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Dropdown */
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+
+
+
+.featured-grants {
+    display: flex;
+    gap: 20px;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #f9f9f9 0%, #ffffff 100%);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Left Panel */
+.left-panel {
+    flex: 1;
+    padding: 40px;
+}
+
+.left-panel h3 {
+    position: relative;
+    font-size: 78px;
+    font-weight: bold;
+    color: #DC143C;
+}
+
+.left-panel h2 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #013892;
+}
+
+.left-panel p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Button Styling */
+.read-more {
+    padding: 12px 25px;
+    background-color: #DC143C;
+    border: 2px solid #DC143C;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 6px;
+}
+
+.read-more:hover {
+    background-color: white;
+    color: #DC143C;
+    border-radius: 8px;
+}
+
+/* Right Panel */
+.right-panel {
+    background: linear-gradient(180deg, #DC143C 0%, #003892 100%);
+    color: #fff;
+    width: 280px;
+    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.right-panel ol {
+    list-style: none;
+    padding: 0;
+}
+
+.right-panel ol li {
+    padding: 12px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    transition: background 0.3s ease;
+    border-radius: 5px;
+}
+
+.right-panel ol li:hover {
+    background: linear-gradient(90deg, #DC143C 0%, #003892 100%);
+    border-radius: solid #fff 5px;
+    color: #fff;
+    transform: translateX(5px);
+    transition: 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .featured-grants {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .left-panel, .right-panel {
+        width: 100%;
+        max-width: 100%;
+        border-right: none;
+    }
+
+    .right-panel {
+        width: 90%;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .left-panel h3 {
+        font-size: 30px;
+    }
+
+    .left-panel h2 {
+        font-size: 22px;
+    }
+
+    .left-panel p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .left-panel h3 {
+        font-size: 26px;
+    }
+
+    .left-panel h2 {
+        font-size: 20px;
+    }
+
+    .left-panel p {
+        font-size: 14px;
+    }
+
+    .read-more {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+
+

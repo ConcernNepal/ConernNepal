@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Market Research - Concern Nepal Pvt. Ltd.</title>
+    <link rel="shortcut icon" type="imag" href="logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="mrs.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (for icons) -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <a href="./index.html" class="logo"><img src="logo.png" alt="Logo"></a>
+        <div class="mean-toggle" id="mobile-menu"></div>
+        
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="./index.html" >Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li class="dropdown">
+                    <a href="./services.html">Our Services</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#leadership">Political Consulting</a></li>
+                        <li><a href="#advisors">Leadership Training</a></li>
+                        <li><a href="./mrs.html">Market Research and Surveys</a></li>
+                        <li><a href="#staff">Press and Media Management</a></li>
+                        <li><a href="#staff">Voter Analysis and Data Collection</a></li>
+                        <li><a href="#staff">GIS Mapping and Spatial Analysis</a></li>
+                        <li><a href="#staff">Social Media Strategy and Management</a></li>
+                        <li><a href="#staff">Policy Review and Development</a></li>
+                        <li><a href="#staff">Election Campaign Design and Management</a></li>
+                        <li><a href="#staff">Political Branding</a></li>
+    
+                    </ul>
+                </li>
+                <li><a href="./blogs.html">Blog</a></li>
+                <li><a href="./lba/index.html">Political Leadership</a></li>
+                <li><a href="./mrs.html">Market Research</a></li>
+                <li><a href="#">Contact/Event</a></li>
+            </ul>
+        </nav>
+        <div class="clear"></div>
+    </header>
+  <!-- Market Research Section -->
+  <section class="market-research">
+    <div class="market-research-container">
+        <!-- Left Text Section -->
+        <div class="market-research-text">
+            <h2 class="market-research-title">
+                <span class="highlight">What Is</span> <br> Market Research ?
+            </h2>
+            <p class="market-research-description">
+                Empowering Your Business with Data-Driven Insights. In today’s competitive landscape, 
+                understanding your market is crucial for success. Our market research services provide 
+                comprehensive, actionable insights to help you make informed decisions and drive your 
+                business forward.
+            </p>
+        </div>
+        
+        <!-- Right Image Section -->
+        <div class="market-research-image">
+           <!-- <img src="market.png" alt="Market Research">  -->
+        </div>
+    </div>
+</section>
+    
+
+    <section class="what-we-offer">
+        <h2>What We Offer</h2>
+        <div class="underline"></div>
+        <div class="offer-container">
+            <div class="offer-card">
+                <div class="icon">📊</div>
+                <h3>Market Analysis</h3>
+                
+                <p>Gain a deep understanding of industry trends, market dynamics, and competitor strategies to stay ahead of the curve.</p>
+            </div>
+            <div class="offer-card">
+                <div class="icon">🔍</div>
+                <h3>Consumer Behavior Insights</h3>
+                <p>Understand the needs, preferences, and behaviors of your target audience to create more effective marketing strategies.
+                </p>
+            </div>
+            <div class="offer-card">
+                <div class="icon">📈</div>
+                <h3>Competitive Analysis</h3>
+                <p>Identify your competitors’ strengths and weaknesses and uncover opportunities to differentiate your business.</p>
+            </div>
+            <div class="offer-card">
+                <div class="icon">💡</div>
+                <h3>Industry Trend Analysis</h3>
+                <p>Stay updated on emerging trends, technologies, and innovations shaping your industry’s future.</p>
+            </div>
+            <div class="offer-card">
+                <div class="icon">💡</div>
+                <h3>Feasibility Studies</h3>
+                <p>Assess the viability of your ideas or projects before launching, backed by robust data and insights.</p>
+            </div>
+
+        </div>
+    </section>
+    <!-- Why Choose Us Section -->
+    <div class="featured-grants">
+        <div class="left-panel">
+            <h3>Why Choose Us?</h3>
+            <h2 id="grant-title">Tailored Research Solutions</h2>
+            <p id="grant-description">
+                Every business is unique, and so are our research strategies. We customize our approach to meet your specific goals.
+            </p>
+            <button class="read-more">Learn More</button>
+        </div>
+
+        <div class="right-panel">
+            <ol class="work">
+                <li onclick="updateContent('In-Depth Expertise', 'Our team of experienced researchers ensures you receive accurate, reliable, and relevant data.')">In-Depth Expertise</li>
+                <li onclick="updateContent('Actionable Recommendations', 'We don’t just provide data – we deliver insights and recommendations that drive impact.')">Actionable Recommendations</li>
+                <li onclick="updateContent('Understand Your Needs', 'We collaborate with you to define your objectives and research scope.')">Understand Your Needs</li>
+                <li onclick="updateContent('Data Collection', 'Using primary and secondary research methods, we gather data from trusted sources.')">Data Collection</li>
+                <li onclick="updateContent('Analysis & Insights', 'Our team analyzes the data to identify trends, challenges, and opportunities.')">Analysis & Insights</li>
+                <li onclick="updateContent('Strategic Recommendations', 'We provide clear, actionable strategies to help you achieve your goals.')">Strategic Recommendations</li>
+            </ol>
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-danger text-white text-center py-3">
+        <p class="mb-0">Designed by Apiraro.</p>
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="mrs.js"></script>
+</body>
+</html>
